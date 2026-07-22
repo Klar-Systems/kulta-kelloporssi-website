@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Helsingin Kulta- &amp; Kellopörssi · Kultakoruja ja sormuksia Punavuoressa</title>
-<meta name="description" content="Perinteikäs kulta- ja koruliike Helsingin Punavuoressa vuodesta 1993. Kauniita kultakoruja, sormuksia ja jalokiviä. Ilmainen korujen tarkastus. Iso Roobertinkatu 9, Helsinki. Tervetuloa käymään." />
+<meta name="description" content="Perinteikäs kulta- ja koruliike Helsingin Punavuoressa vuodesta 1993. Kultakoruja, sormuksia ja vintagea. Ilmainen arviointi, kullan osto, korjaukset ja patterinvaihto. Iso Roobertinkatu 9, Helsinki. Tervetuloa käymään." />
 <meta name="theme-color" content="#4A1217" />
 <meta property="og:type" content="business.business" />
 <meta property="og:title" content="Helsingin Kulta- & Kellopörssi" />
@@ -64,7 +64,7 @@
     backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:82px}
   .brand{line-height:1.05}
-  .brand .bt{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.6rem;letter-spacing:.01em;color:var(--red)}
+  .brand .bt{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.6rem;letter-spacing:.01em;color:var(--ink)}
   .brand small{display:block;font-family:'Jost',sans-serif;font-weight:400;font-size:.66rem;
     letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:3px}
   nav ul{display:flex;gap:2.4rem;list-style:none}
@@ -80,7 +80,7 @@
   .hero{display:grid;grid-template-columns:1.02fr .98fr;background:var(--red-deep);color:#F1E9DC}
   .hero-text{display:flex;flex-direction:column;justify-content:center;
     padding:clamp(2.4rem,5vw,4rem) clamp(1.8rem,5vw,4.2rem);position:relative}
-  .hero-text:before{content:"";position:absolute;inset:24px;border:1px solid rgba(215,181,106,.28);pointer-events:none}
+  .hero-text:before{content:"";position:absolute;inset:24px;border:1px solid rgba(215,181,106,.2);pointer-events:none}
   .hero-text .inner{position:relative}
   .hero h1{font-size:clamp(2.5rem,4.6vw,4rem);margin:.8rem 0 .3rem;color:#F7EFE2}
   .hero h1 em{font-style:italic;font-weight:500}
@@ -135,14 +135,21 @@
   .svc svg{color:var(--gold-3);margin:1.2rem auto .1rem}
   .svc h3{font-size:1.85rem;margin:.35rem 0 .5rem;color:var(--ink)}
   .svc p{color:var(--muted);font-size:1.02rem;max-width:34ch;margin-inline:auto}
-  .svc-cta{text-align:center;margin-top:2.4rem}
+  .svc-hi{max-width:560px;margin:2.8rem auto 0}
+  .svc-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;max-width:880px;margin:1.4rem auto 0}
+  .svc-item{display:flex;gap:1rem;align-items:flex-start;background:var(--paper);border:1px solid var(--line);padding:1.4rem 1.4rem}
+  .svc-item svg{color:var(--gold-3);flex:none;margin-top:.15rem}
+  .svc-item h4{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);line-height:1.2;margin-bottom:.15rem}
+  .svc-item p{color:var(--muted);font-size:.96rem;line-height:1.5}
+  .goldprice{max-width:640px;margin:2rem auto 0;text-align:center;font-size:.92rem;letter-spacing:.03em;color:var(--muted)}
+  .goldprice b{color:var(--red);font-weight:500;font-variant-numeric:tabular-nums}
+  .svc-cta{text-align:center;margin-top:2.2rem}
 
   /* ---------- About ---------- */
   .about{background:var(--paper)}
   .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2.2rem,5vw,4.6rem);align-items:center}
   .about-photo{position:relative;padding:16px}
-  .about-photo:before{content:"";position:absolute;inset:0;border:1px solid var(--gold-2);opacity:.7}
-  .about-photo:after{content:"";position:absolute;inset:7px;border:1px solid rgba(142,42,49,.32)}
+  .about-photo:before{content:"";position:absolute;inset:0;border:1px solid var(--gold-2);opacity:.55}
   .about-photo img{position:relative;aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow);z-index:1}
   .about-copy p{color:#4E4A44;margin-top:1.1rem;font-size:1.12rem;line-height:1.72}
   .about-copy p strong{color:var(--ink);font-weight:500}
@@ -150,7 +157,7 @@
   .est-line .yr{font-family:'Cormorant Garamond',serif;font-size:3rem;line-height:.9}
   .est-line .yr-sub{font-size:.86rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 
-  /* ---------- Info (location · hours · reviews) ---------- */
+  /* ---------- Info (location · hours) ---------- */
   .info{background:var(--cream);border-top:1px solid var(--line)}
   .info-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.4rem,7vw,6rem);
     max-width:900px;margin:2.8rem auto 0;position:relative}
@@ -176,11 +183,6 @@
   .cinfo .v{font-size:1.02rem;color:var(--ink)}
   .cinfo a.v{border-bottom:1px solid transparent;transition:.2s}
   .cinfo a.v:hover{color:var(--red-2);border-color:var(--gold-2)}
-  .reviews{margin-top:1.4rem;padding-top:1.3rem;border-top:1px solid var(--line)}
-  .reviews .rev-lab{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red-2);display:block;margin-bottom:.35rem}
-  .reviews a{display:inline-block;color:var(--red-2);font-size:.98rem;
-    border-bottom:1px solid var(--gold-2);padding-bottom:1px;transition:.2s}
-  .reviews a:hover{color:var(--red)}
   .info-btns{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.7rem}
   .info-btns .btn{padding:.82rem 1.5rem;font-size:.82rem}
   .map-wrap{max-width:900px;margin:2.6rem auto 0;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
@@ -198,7 +200,7 @@
   @media(max-width:960px){
     .hero{grid-template-columns:1fr;min-height:auto}
     .hero-slides{min-height:46vh;order:2}
-    .about-grid,.info-cols,.svcs{grid-template-columns:1fr}
+    .about-grid,.info-cols,.svcs,.svc-list{grid-template-columns:1fr}
     .info-cols:before{display:none}
     .about-photo{max-width:440px;margin-inline:auto}
   }
@@ -329,25 +331,40 @@
       <div class="head center">
         <span class="eyebrow">Palvelut</span>
         <hr class="divider center" style="margin:1.1rem auto">
-        <h2>Poikkea sisään, niin <span class="gold">autamme</span></h2>
-        <p>Kauniin korun näkee ja tuntee parhaiten omin käsin. Meillä on aikaa sinulle, ilman ajanvarausta ja ilman kiirettä.</p>
+        <h2>Ostat tai myyt, <span class="gold">autamme mielellämme</span></h2>
+        <p>Olitpa etsimässä ensimmäistä sormustasi tai myymässä vanhaa kultaa, meillä on aikaa sinulle. Ei ajanvarausta, tule vain sisään.</p>
       </div>
 
-      <div class="svcs">
+      <div class="svc-hi">
         <div class="svc">
           <span class="tframe"></span>
           <span class="badge">Veloituksetta</span>
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3a8 8 0 1 0 5.3 14l4.7 4.7"/><path d="M8 11l2.2 2.2L15 8.5"/></svg>
-          <h3>Ilmainen korujen tarkastus</h3>
-          <p>Tuo korusi tai sormuksesi liikkeeseen, niin tarkastamme sen kunnon ja aitouden maksutta. Tule vain sisään.</p>
-        </div>
-        <div class="svc">
-          <span class="tframe"></span>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 3.9L18 7l-2.6 3.4L18 14l-4.4-.1L12 18l-1.6-4.1L6 14l2.6-3.6L6 7l4.4.1L12 3z"/></svg>
-          <h3>Korujen puhdistus</h3>
-          <p>Anna kultakorusi tai sormuksesi kimallella taas. Puhdistamme sen sinulle huolella liikkeessä.</p>
+          <h3>Ilmainen arviointi</h3>
+          <p>Tuo korusi, kultasi tai kellosi, niin arvioimme sen sinulle maksutta ja rehellisesti. Tule vain sisään.</p>
         </div>
       </div>
+
+      <div class="svc-list">
+        <div class="svc-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 12 22l-9-9V4h9l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.3"/></svg>
+          <div><h4>Kullan osto</h4><p>Ostamme kultaa, koruja ja hopeaa ajantasaisella, rehellisellä arviolla.</p></div>
+        </div>
+        <div class="svc-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.1-2.1 2.7-2.5z"/></svg>
+          <div><h4>Kultaseppä &amp; tilaustyöt</h4><p>Korjaukset, muutostyöt ja omat tilaustyöt ammattitaidolla.</p></div>
+        </div>
+        <div class="svc-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"/><polyline points="12 9.5 12 13 14.5 14.5"/><path d="M9 2h6M9 2v2.5M15 2v2.5"/></svg>
+          <div><h4>Huollot &amp; patterinvaihto</h4><p>Kellojen huollot ja patterinvaihto samalla käynnillä.</p></div>
+        </div>
+        <div class="svc-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 3.9L18 7l-2.6 3.4L18 14l-4.4-.1L12 18l-1.6-4.1L6 14l2.6-3.6L6 7l4.4.1L12 3z"/></svg>
+          <div><h4>Korujen puhdistus</h4><p>Puhdistamme kultakorusi ja sormuksesi kimaltamaan taas.</p></div>
+        </div>
+      </div>
+
+      <p class="goldprice" id="goldprice" style="display:none">Kullan päivän hinta (24k): <b id="gp24">–</b> · pörssihinta, tarkka arvio aina liikkeessä.</p>
 
       <div class="svc-cta">
         <a class="btn btn-red" href="#sijainti">
@@ -369,7 +386,7 @@
         <hr class="divider" style="margin:1.1rem 0">
         <h2 style="font-size:clamp(1.9rem,3.4vw,2.6rem)">Pieni kultaliike, jolla on aikaa sinulle</h2>
         <p>Helsingin Kulta- &amp; Kellopörssi on palvellut Punavuoren sydämessä <strong>vuodesta 1993</strong>. Meille jokainen koru ja sormus on tärkeä. Otamme aikaa kuunnellaksemme, mitä juuri sinä etsit.</p>
-        <p>Löydät meiltä <strong>kauniita kultakoruja ja sormuksia</strong>: kihla- ja vihkisormuksia, ketjuja, jalokiviä ja perintökoruja. Autamme sinua rehellisesti ja kiireettä, niin ostaessa kuin myydessäkin.</p>
+        <p>Löydät meiltä <strong>kauniita kultakoruja ja sormuksia</strong>: kihla- ja vihkisormuksia, ketjuja, jalokiviä sekä vintage- ja perintökoruja. Autamme sinua rehellisesti ja kiireettä, niin ostaessa kuin myydessäkin.</p>
         <div class="est-line">
           <span class="yr gold">1993</span>
           <span class="yr-sub">Punavuori<br>Helsinki</span>
@@ -378,13 +395,13 @@
     </div>
   </section>
 
-  <!-- INFO · location, hours, reviews -->
+  <!-- INFO · location, hours -->
   <section class="info" id="aukiolo">
     <div class="wrap">
       <div class="head center">
         <span class="eyebrow">Tervetuloa liikkeeseen</span>
         <hr class="divider center" style="margin:1.1rem auto">
-        <h2>Sijainti, aukioloajat ja <span class="gold">arvostelut</span></h2>
+        <h2>Sijainti ja <span class="gold">aukioloajat</span></h2>
       </div>
 
       <div class="info-cols">
@@ -403,10 +420,6 @@
           <div class="cinfo">
             <div><span class="lab">Osoite</span><a class="v" href="https://maps.google.com/?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki" target="_blank" rel="noopener">Iso Roobertinkatu 9, 00120 Helsinki</a></div>
             <div><span class="lab">Puhelin</span><a class="v" href="tel:+3589645360">09 645 360</a></div>
-          </div>
-          <div class="reviews">
-            <span class="rev-lab">Arvostelut</span>
-            <a href="https://www.google.com/maps?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki" target="_blank" rel="noopener">Lue asiakkaidemme arvostelut Google&nbsp;Mapsissa</a>
           </div>
           <div class="info-btns">
             <a class="btn btn-red" href="https://maps.google.com/?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki" target="_blank" rel="noopener">Näytä reitti kartalla</a>
@@ -461,6 +474,23 @@
       i=(i+1)%slides.length;
       slides[i].classList.add('active');
     },4500);
+  })();
+
+  // live gold price -> EUR per gram (24k). Stays hidden if either feed fails.
+  (function(){
+    var el=document.getElementById('gp24'), wrap=document.getElementById('goldprice');
+    if(!el||!wrap) return;
+    Promise.all([
+      fetch('https://api.gold-api.com/price/XAU').then(function(r){return r.json();}),
+      fetch('https://api.frankfurter.dev/v1/latest?base=USD&symbols=EUR').then(function(r){return r.json();})
+    ]).then(function(res){
+      var usdPerOz=res[0] && res[0].price;
+      var usdToEur=res[1] && res[1].rates && res[1].rates.EUR;
+      if(!usdPerOz || !usdToEur) return;
+      var g24=(usdPerOz*usdToEur)/31.1034768;
+      el.textContent=g24.toLocaleString('fi-FI',{minimumFractionDigits:2,maximumFractionDigits:2})+' €/g';
+      wrap.style.display='block';
+    }).catch(function(){/* leave hidden - never show a stale number */});
   })();
 </script>
 </body>
