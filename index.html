@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Helsingin Kulta- &amp; Kellopörssi — Kultaa, kelloja ja koruja Punavuoressa</title>
-<meta name="description" content="Perinteikäs kulta- ja kelloliike Helsingin Punavuoressa vuodesta 1993. Ostamme ja myymme kultaa, arvokelloja, koruja ja sormuksia. Iso Roobertinkatu 9, Helsinki." />
+<title>Helsingin Kulta- &amp; Kellopörssi · Kultakoruja ja sormuksia Punavuoressa</title>
+<meta name="description" content="Perinteikäs kulta- ja koruliike Helsingin Punavuoressa vuodesta 1993. Kauniita kultakoruja, sormuksia ja jalokiviä. Ilmainen korujen tarkastus. Iso Roobertinkatu 9, Helsinki. Tervetuloa käymään." />
 <meta name="theme-color" content="#4A1217" />
 <meta property="og:type" content="business.business" />
 <meta property="og:title" content="Helsingin Kulta- & Kellopörssi" />
-<meta property="og:description" content="Kultaa, kelloja, koruja ja sormuksia Helsingin Punavuoressa vuodesta 1993. Osto ja myynti." />
-<meta property="og:image" content="images/hero-watch.jpg" />
+<meta property="og:description" content="Kauniita kultakoruja ja sormuksia Helsingin Punavuoressa vuodesta 1993. Ilmainen korujen tarkastus. Tule käymään." />
+<meta property="og:image" content="images/rings.jpg" />
 <meta property="og:locale" content="fi_FI" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,8 +47,8 @@
   .eyebrow{font-weight:500;text-transform:uppercase;letter-spacing:.32em;font-size:.8rem;color:var(--red-2)}
   .eyebrow.on-dark{color:var(--gold-2)}
 
-  /* buttons — rectangular, no pills */
-  .btn{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.9rem;border-radius:2px;
+  /* buttons - rectangular, no pills */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem 1.9rem;border-radius:2px;
     font-size:1rem;letter-spacing:.06em;text-transform:uppercase;transition:.2s;font-weight:400}
   .btn-red{background:var(--red);color:#F3EEE4}
   .btn-red:hover{background:var(--red-2);transform:translateY(-2px)}
@@ -56,23 +56,13 @@
   .btn-gold:hover{transform:translateY(-2px);filter:brightness(1.04)}
   .btn-outline{border:1px solid rgba(215,181,106,.6);color:#F0E7D5;background:transparent}
   .btn-outline:hover{border-color:var(--gold-2);background:rgba(215,181,106,.1)}
-  .btn-line{border:1px solid var(--red);color:var(--red);background:transparent}
-  .btn-line:hover{background:var(--red);color:#F3EEE4}
 
   /* ---------- Header ---------- */
   .goldline{height:3px;background:linear-gradient(90deg,var(--gold-3),var(--gold-1),var(--gold-2),var(--gold-1),var(--gold-3))}
-  /* live gold price ticker — very small */
-  .priceband{display:none;background:var(--red-deep);color:#CDBE9F;
-    font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:.4rem 0}
-  .priceband .wrap{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;text-align:center}
-  .priceband .dot{width:6px;height:6px;border-radius:50%;background:var(--gold-2);box-shadow:0 0 0 0 rgba(215,181,106,.6);
-    animation:pulse 2.4s infinite}
-  .priceband b{color:var(--gold-1);font-weight:600}
-  .priceband .sep{opacity:.4}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(215,181,106,.5)}70%{box-shadow:0 0 0 6px rgba(215,181,106,0)}100%{box-shadow:0 0 0 0 rgba(215,181,106,0)}}
   header{position:sticky;top:0;z-index:60;background:rgba(252,249,243,.92);
     backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:88px}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:82px}
   .brand{line-height:1.05}
   .brand .bt{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.6rem;letter-spacing:.01em;color:var(--red)}
   .brand small{display:block;font-family:'Jost',sans-serif;font-weight:400;font-size:.66rem;
@@ -87,177 +77,174 @@
   .burger span{display:block;width:26px;height:2px;background:var(--red);margin:6px 0;transition:.25s}
 
   /* ---------- Hero ---------- */
-  .hero{display:grid;grid-template-columns:1.02fr .98fr;min-height:min(86vh,740px);background:var(--red-deep);color:#F1E9DC}
+  .hero{display:grid;grid-template-columns:1.02fr .98fr;background:var(--red-deep);color:#F1E9DC}
   .hero-text{display:flex;flex-direction:column;justify-content:center;
-    padding:clamp(2.6rem,6vw,5.5rem) clamp(1.8rem,5vw,4.5rem);position:relative}
-  .hero-text:before{content:"";position:absolute;inset:26px;border:1px solid rgba(215,181,106,.28);pointer-events:none}
+    padding:clamp(2.4rem,5vw,4rem) clamp(1.8rem,5vw,4.2rem);position:relative}
+  .hero-text:before{content:"";position:absolute;inset:24px;border:1px solid rgba(215,181,106,.28);pointer-events:none}
   .hero-text .inner{position:relative}
-  .hero h1{font-size:clamp(3rem,6vw,5.3rem);margin:1rem 0 .3rem;color:#F7EFE2}
+  .hero h1{font-size:clamp(2.5rem,4.6vw,4rem);margin:.8rem 0 .3rem;color:#F7EFE2}
   .hero h1 em{font-style:italic;font-weight:500}
-  .hero .lead{font-size:clamp(1.14rem,1.7vw,1.38rem);color:#D6CBBB;max-width:40ch;margin-top:1.5rem;font-weight:300}
-  .hero-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.4rem}
-  .hero-img{position:relative;background:url('images/hero-watch.jpg') center/cover no-repeat;min-height:340px}
-  .hero-img:after{content:"";position:absolute;inset:0;
-    background:linear-gradient(90deg,rgba(58,13,17,.6),transparent 32%)}
-  .hero-badge{position:absolute;left:clamp(1.4rem,4vw,3rem);bottom:clamp(1.4rem,4vw,3rem);z-index:2;
-    background:rgba(58,13,17,.76);backdrop-filter:blur(4px);border:1px solid rgba(215,181,106,.42);
-    padding:1rem 1.35rem;display:flex;align-items:center;gap:.9rem}
-  .hero-badge .big{font-family:'Cormorant Garamond',serif;font-size:2.2rem;line-height:1}
-  .hero-badge .sm{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:#C6B79E;line-height:1.3}
+  .hero .lead{font-size:clamp(1.1rem,1.6vw,1.3rem);color:#D6CBBB;max-width:42ch;margin-top:1.3rem;font-weight:300}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
 
-  /* ---------- Trust strip ---------- */
-  .trust{background:var(--cream);border-block:1px solid var(--line)}
-  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:2.1rem 0}
-  .trust .item{display:flex;align-items:center;gap:1rem;justify-content:center;text-align:left;
-    padding:.2rem 1rem}
-  .trust .item + .item{border-left:1px solid var(--line)}
-  .trust .item svg{color:var(--gold-3);flex:none}
-  .trust .k{font-family:'Cormorant Garamond',serif;font-size:1.5rem;line-height:1;color:var(--red)}
-  .trust .v{font-size:.85rem;letter-spacing:.03em;color:var(--muted)}
+  /* rotating hero slideshow */
+  .hero-slides{position:relative;overflow:hidden;min-height:380px}
+  .hero-slides .slide{position:absolute;inset:0;background-size:cover;background-position:center;
+    opacity:0;transition:opacity 1.3s ease}
+  .hero-slides .slide.active{opacity:1}
+  .hero-slides:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(90deg,rgba(58,13,17,.6),transparent 34%)}
+  .hero-badge{position:absolute;left:clamp(1.4rem,4vw,3rem);bottom:clamp(1.4rem,4vw,3rem);z-index:2;
+    background:rgba(58,13,17,.72);backdrop-filter:blur(4px);border:1px solid rgba(215,181,106,.42);
+    padding:.9rem 1.25rem;display:flex;align-items:center;gap:.85rem}
+  .hero-badge .big{font-family:'Cormorant Garamond',serif;font-size:2.1rem;line-height:1}
+  .hero-badge .sm{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:#C6B79E;line-height:1.3}
 
   /* ---------- Sections ---------- */
-  section{padding:clamp(4rem,8vw,7rem) 0}
+  section{padding:clamp(3.4rem,7vw,6rem) 0}
   .head{max-width:680px}
   .head.center{margin-inline:auto;text-align:center}
-  .head h2{font-size:clamp(2.4rem,5vw,3.6rem);margin-top:.7rem}
-  .head p{color:var(--muted);margin-top:1.1rem;font-size:1.14rem}
+  .head h2{font-size:clamp(2.1rem,4.2vw,3rem);margin-top:.7rem}
+  .head p{color:var(--muted);margin-top:1.1rem;font-size:1.12rem}
 
-  /* about */
+  /* ---------- Chain teaser (auto-scrolling placeholders) ---------- */
+  .chain-sec{background:var(--paper);padding:clamp(2.2rem,4vw,3.4rem) 0}
+  .chain{margin-top:1.6rem;position:relative;overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+  .chain + .chain{margin-top:1.3rem}
+  .chain-track{display:flex;gap:1.3rem;width:max-content;animation:scrollx 46s linear infinite}
+  .chain.rev .chain-track{animation-duration:52s;animation-direction:reverse}
+  .chain:hover .chain-track{animation-play-state:paused}
+  .chip{flex:0 0 auto;width:210px;height:148px;position:relative;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;text-align:center;padding:1rem;
+    background:linear-gradient(160deg,#FBF6EC,#F0E6D2);border:1px solid var(--line)}
+  .chip:before{content:"";position:absolute;inset:9px;border:1px solid rgba(215,181,106,.4);pointer-events:none}
+  .chip svg{color:var(--gold-3);opacity:.9}
+  .chip .lab{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);line-height:1.1}
+  .gallery-note{text-align:center;color:var(--muted);font-size:.95rem;margin-top:1.7rem;font-style:italic}
+  @keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- Services ---------- */
+  .svc-sec{background:var(--cream);border-block:1px solid var(--line)}
+  .svcs{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;max-width:880px;margin:3rem auto 0}
+  .svc{background:var(--paper);border:1px solid var(--line);padding:2.6rem 2rem 2.4rem;text-align:center;position:relative}
+  .svc .tframe{position:absolute;inset:9px;border:1px solid rgba(215,181,106,.35);pointer-events:none}
+  .svc .badge{display:inline-block;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+    color:var(--red-deep);background:linear-gradient(150deg,var(--gold-1),var(--gold-2) 58%,var(--gold-3));padding:.34rem .85rem}
+  .svc svg{color:var(--gold-3);margin:1.2rem auto .1rem}
+  .svc h3{font-size:1.85rem;margin:.35rem 0 .5rem;color:var(--ink)}
+  .svc p{color:var(--muted);font-size:1.02rem;max-width:34ch;margin-inline:auto}
+  .svc-cta{text-align:center;margin-top:2.4rem}
+
+  /* ---------- About ---------- */
   .about{background:var(--paper)}
-  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2.2rem,5vw,4.8rem);align-items:center}
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2.2rem,5vw,4.6rem);align-items:center}
   .about-photo{position:relative;padding:16px}
   .about-photo:before{content:"";position:absolute;inset:0;border:1px solid var(--gold-2);opacity:.7}
   .about-photo:after{content:"";position:absolute;inset:7px;border:1px solid rgba(142,42,49,.32)}
   .about-photo img{position:relative;aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow);z-index:1}
-  .about-copy p{color:#4E4A44;margin-top:1.25rem;font-size:1.17rem;line-height:1.75}
+  .about-copy p{color:#4E4A44;margin-top:1.1rem;font-size:1.12rem;line-height:1.72}
   .about-copy p strong{color:var(--ink);font-weight:500}
-  .est-line{display:flex;align-items:baseline;gap:1rem;margin-top:2rem;padding-top:1.6rem;border-top:1px solid var(--line)}
-  .est-line .yr{font-family:'Cormorant Garamond',serif;font-size:3.4rem;line-height:.9}
-  .est-line .yr-sub{font-size:.88rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  .est-line{display:flex;align-items:baseline;gap:1rem;margin-top:1.8rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+  .est-line .yr{font-family:'Cormorant Garamond',serif;font-size:3rem;line-height:.9}
+  .est-line .yr-sub{font-size:.86rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 
-  /* offerings */
-  .offer-sec{background:var(--cream);border-block:1px solid var(--line)}
-  .offer{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-top:3.4rem}
-  .tile{position:relative;overflow:hidden;background:var(--red-deep);box-shadow:var(--shadow);
-    isolation:isolate;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end}
-  .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s ease}
-  .tile:after{content:"";position:absolute;inset:0;z-index:-1;
-    background:linear-gradient(180deg,rgba(58,13,17,.05) 28%,rgba(58,13,17,.52) 60%,rgba(40,9,12,.95))}
-  .tile:hover img{transform:scale(1.06)}
-  .tile .tframe{position:absolute;inset:14px;border:1px solid rgba(242,226,180,.4);z-index:1;pointer-events:none}
-  .tile .body{position:relative;z-index:2;padding:2rem 1.9rem 2.1rem;color:#F1E9DC}
-  .tile .kicker{font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-2)}
-  .tile h3{font-size:1.95rem;margin:.35rem 0 .5rem;color:#FBF4E7}
-  .tile p{font-size:1rem;color:#D5CBBB;line-height:1.6}
-
-  /* detail band */
-  .band{position:relative;color:#F1E9DC;text-align:center;
-    background:linear-gradient(rgba(58,13,17,.84),rgba(40,9,12,.88)),url('images/pocketwatch.jpg') center/cover fixed;
-    padding:clamp(5rem,11vw,8.5rem) 0}
-  .band .q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.9rem,4vw,3rem);
-    max-width:22ch;margin:0 auto;line-height:1.3;color:#F6EEDF}
-  .band .sign{margin-top:1.8rem;font-size:.9rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-2)}
-
-  /* info — minimal, no boxes */
-  .info{background:var(--paper)}
+  /* ---------- Info (location · hours · reviews) ---------- */
+  .info{background:var(--cream);border-top:1px solid var(--line)}
   .info-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.4rem,7vw,6rem);
-    max-width:900px;margin:3.2rem auto 0;position:relative}
+    max-width:900px;margin:2.8rem auto 0;position:relative}
   .info-cols:before{content:"";position:absolute;top:.3rem;bottom:.3rem;left:50%;width:1px;
     background:linear-gradient(180deg,transparent,var(--gold-2),transparent);opacity:.45}
   .col-title{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.4rem;color:var(--ink);
     letter-spacing:.08em;text-transform:uppercase}
   .col-title .un{display:block;width:32px;height:2px;margin-top:.7rem;
     background:linear-gradient(90deg,var(--gold-2),var(--gold-3))}
-  .status{display:flex;align-items:center;gap:.55rem;margin-top:1.3rem;
+  .status{display:flex;align-items:center;gap:.55rem;margin-top:1.2rem;
     font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
   .status .dot{width:7px;height:7px;border-radius:50%;background:var(--gold-2);
     box-shadow:0 0 0 0 rgba(215,181,106,.6);animation:pulse 2.4s infinite}
   .status b{color:var(--ink);font-weight:500}
-  .hrs{margin-top:1.2rem;display:grid;max-width:320px}
-  .hrs .row{display:flex;justify-content:space-between;align-items:baseline;padding:.5rem 0}
+  .hrs{margin-top:1.1rem;display:grid;max-width:320px}
+  .hrs .row{display:flex;justify-content:space-between;align-items:baseline;padding:.45rem 0}
   .hrs .row + .row{border-top:1px solid rgba(23,20,15,.07)}
   .hrs .d{color:var(--muted);font-size:.98rem}
   .hrs .t{color:var(--ink);font-size:.98rem;font-variant-numeric:tabular-nums}
   .hrs .t.off{color:var(--muted)}
-  .cinfo{margin-top:1.2rem;display:grid;gap:1rem}
+  .cinfo{margin-top:1.1rem;display:grid;gap:.9rem}
   .cinfo .lab{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red-2);display:block;margin-bottom:.2rem}
   .cinfo .v{font-size:1.02rem;color:var(--ink)}
   .cinfo a.v{border-bottom:1px solid transparent;transition:.2s}
   .cinfo a.v:hover{color:var(--red-2);border-color:var(--gold-2)}
-  .info-btns{margin-top:1.7rem;display:flex;flex-wrap:wrap;gap:.7rem}
+  .reviews{margin-top:1.4rem;padding-top:1.3rem;border-top:1px solid var(--line)}
+  .reviews .rev-lab{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red-2);display:block;margin-bottom:.35rem}
+  .reviews a{display:inline-block;color:var(--red-2);font-size:.98rem;
+    border-bottom:1px solid var(--gold-2);padding-bottom:1px;transition:.2s}
+  .reviews a:hover{color:var(--red)}
+  .info-btns{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.7rem}
   .info-btns .btn{padding:.82rem 1.5rem;font-size:.82rem}
-
   .map-wrap{max-width:900px;margin:2.6rem auto 0;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
-  .map-wrap iframe{display:block;width:100%;height:250px;border:0;filter:grayscale(.15) contrast(1.02)}
-  .map-note{text-align:center;margin-top:1rem;font-size:.9rem;color:var(--muted)}
-  .map-note a{color:var(--red-2);border-bottom:1px solid var(--gold-2);padding-bottom:1px}
-  .map-note a:hover{color:var(--red)}
+  .map-wrap iframe{display:block;width:100%;height:240px;border:0;filter:grayscale(.15) contrast(1.02)}
 
-  /* ---------- Footer ---------- */
-  footer{background:var(--red-deep);color:#DDD3C4;padding:4rem 0 2.2rem}
-  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.6rem}
-  .foot-grid h4{font-size:1.75rem;color:#F3EEE4}
-  .foot-brand p{color:#9FB0C2;margin-top:1rem;font-size:1rem;max-width:36ch}
-  .foot-col .h{color:var(--gold-2);font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:.4rem}
-  .foot-col p,.foot-col a{display:block;color:#AEBCC9;font-size:1.03rem;margin-top:.55rem;transition:.2s}
-  .foot-col a:hover{color:#F3EEE4}
-  .foot-bottom{border-top:1px solid rgba(215,181,106,.18);margin-top:3rem;padding-top:1.7rem;
-    display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem;color:#7E8B98;font-size:.9rem}
+  /* ---------- Footer (minimal) ---------- */
+  footer{background:var(--red-deep);color:#C9BCA9;padding:1.5rem 0;font-size:.85rem}
+  .foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.35rem .9rem;text-align:center;letter-spacing:.01em}
+  .foot .fname{color:var(--gold-2);font-family:'Cormorant Garamond',serif;font-size:1.05rem;letter-spacing:.02em}
+  .foot .fsep{opacity:.4}
+  .foot a{transition:.2s}
+  .foot a:hover{color:#F3EEE4}
+  .foot .fcopy{opacity:.55}
 
   @media(max-width:960px){
-    .hero{grid-template-columns:1fr}
-    .hero-img{min-height:50vh;order:2}
-    .about-grid,.info-cols,.foot-grid{grid-template-columns:1fr}
+    .hero{grid-template-columns:1fr;min-height:auto}
+    .hero-slides{min-height:46vh;order:2}
+    .about-grid,.info-cols,.svcs{grid-template-columns:1fr}
     .info-cols:before{display:none}
-    .offer,.trust .wrap{grid-template-columns:1fr}
-    .trust .item + .item{border-left:0;border-top:1px solid var(--line)}
-    .about-photo{max-width:460px;margin-inline:auto}
-    .band{background-attachment:scroll}
+    .about-photo{max-width:440px;margin-inline:auto}
   }
   @media(max-width:760px){
     html{font-size:112%}
     nav ul,.nav-cta{display:none}
     .burger{display:block}
-    nav.open ul{display:flex;position:absolute;top:88px;left:0;right:0;flex-direction:column;gap:0;
+    nav.open ul{display:flex;position:absolute;top:82px;left:0;right:0;flex-direction:column;gap:0;
       background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 0;box-shadow:var(--shadow)}
     nav.open ul li{padding:0 6vw}
     nav.open ul a{display:block;padding:1rem 0;border-bottom:1px solid var(--line)}
+    .hero-text{text-align:center}
+    .hero .lead{margin-inline:auto}
+    .hero-actions{justify-content:center}
+    .about-copy{text-align:center}
+    .about-copy .divider{margin-inline:auto!important}
+    .est-line{justify-content:center}
+    .ic-col{text-align:center}
+    .col-title .un{margin-inline:auto}
+    .status{justify-content:center}
+    .hrs{margin-inline:auto}
+    .info-btns{justify-content:center}
   }
-  @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.band{background-attachment:scroll}}
+  @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}
+    .chain-track{animation:none;justify-content:center;flex-wrap:wrap;width:auto}}
 </style>
 </head>
 <body>
 
 <div class="goldline"></div>
-<div class="priceband" id="priceband">
-  <div class="wrap">
-    <span class="dot"></span>
-    <span>Kullan päivän hinta</span>
-    <span class="sep">·</span>
-    <span>24k <b id="g24">–</b></span>
-    <span class="sep">·</span>
-    <span>18k <b id="g18">–</b></span>
-    <span class="sep">·</span>
-    <span>pörssihinta</span>
-  </div>
-</div>
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="Helsingin Kulta- ja Kellopörssi">
       <span class="bt">Helsingin Kulta- &amp; Kellopörssi</span>
-      <small>Kulta- ja kelloliike · Est. 1993</small>
+      <small>Kulta- ja koruliike · Est. 1993</small>
     </a>
     <nav id="nav">
       <ul>
         <li><a href="#meista">Meistä</a></li>
-        <li><a href="#valikoima">Valikoima</a></li>
-        <li><a href="#aukiolo">Aukioloajat</a></li>
+        <li><a href="#palvelut">Palvelut</a></li>
         <li><a href="#sijainti">Sijainti</a></li>
       </ul>
     </nav>
-    <a class="nav-cta" href="tel:+3589645360">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      09 645 360
+    <a class="nav-cta" href="#sijainti">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Tule käymään
     </a>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -270,18 +257,21 @@
     <div class="hero-text">
       <div class="inner">
         <span class="eyebrow on-dark">Iso Roobertinkatu 9 · Punavuori</span>
-        <h1>Kultaa, kelloja ja <em class="gold">tarinoita</em> vuodesta&nbsp;1993.</h1>
-        <p class="lead">Perinteikäs kulta- ja kelloliike Helsingin Punavuoressa. Ostamme ja myymme klassista kultaa, arvokelloja, koruja ja sormuksia, asiantuntemuksella ja kiireettä.</p>
+        <h1>Kultaa, koruja ja <em class="gold">kauniita sormuksia</em>.</h1>
+        <p class="lead">Perinteikäs kulta- ja koruliike Helsingin Punavuoressa vuodesta 1993. Kauniita kultakoruja, sormuksia ja jalokiviä, asiantuntemuksella ja kiireettä. Tule käymään ja katso omin silmin.</p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="tel:+3589645360">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Soita 09 645 360
+          <a class="btn btn-gold" href="#sijainti">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Tule käymään
           </a>
-          <a class="btn btn-outline" href="#sijainti">Löydä liikkeeseen</a>
+          <a class="btn btn-outline" href="#palvelut">Ilmainen korujen tarkastus</a>
         </div>
       </div>
     </div>
-    <div class="hero-img" role="img" aria-label="Kultainen rannekello tummaa taustaa vasten">
+    <div class="hero-slides" role="img" aria-label="Kauniita kultakoruja, sormuksia ja jalokiviä">
+      <div class="slide active" style="background-image:url('images/rings.jpg')"></div>
+      <div class="slide" style="background-image:url('images/hero-ring.jpg')"></div>
+      <div class="slide" style="background-image:url('images/about-woman.jpg')"></div>
       <div class="hero-badge">
         <span class="big gold">30+</span>
         <span class="sm">vuotta<br>Punavuoressa</span>
@@ -289,36 +279,97 @@
     </div>
   </section>
 
-  <!-- TRUST STRIP -->
-  <div class="trust">
+  <!-- ROLLING CHAIN (a glimpse of the range; real photos added later) -->
+  <section class="chain-sec">
     <div class="wrap">
-      <div class="item">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg>
-        <div><div class="k">Vuodesta 1993</div><div class="v">Perinteikäs perheliike</div></div>
+      <div class="head center">
+        <span class="eyebrow">Poimintoja valikoimasta</span>
       </div>
-      <div class="item">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg>
-        <div><div class="k">Osto ja myynti</div><div class="v">Rehellinen arvio paikan päällä</div></div>
+      <!-- Row 1: diamonds, earrings & rings -->
+      <div class="chain" aria-label="Timantti- ja kivikoruja">
+        <div class="chain-track">
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l3 5-9 12L3 8l3-5z"/><path d="M3 8h18M9 3l3 5 3-5"/></svg><span class="lab">Timanttisormus</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a2.5 2.5 0 0 1 5 0c0 2-2 2.5-2 4.5"/><circle cx="12" cy="14" r="4.5"/></svg><span class="lab">Korvakorut</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 3.2L12 9.4 9.5 6.2 12 3z"/><circle cx="12" cy="15.5" r="5"/></svg><span class="lab">Kihlasormus</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l3 5-9 12L3 8l3-5z"/><path d="M3 8h18M9 3l3 5 3-5"/></svg><span class="lab">Jalokivikoru</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="14" r="5"/><circle cx="15.5" cy="14" r="5"/></svg><span class="lab">Vihkisormukset</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a2.5 2.5 0 0 1 5 0c0 2-2 2.5-2 4.5"/><circle cx="12" cy="14" r="4.5"/></svg><span class="lab">Timanttikorvakorut</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l3 5-9 12L3 8l3-5z"/><path d="M3 8h18M9 3l3 5 3-5"/></svg><span class="lab">Timanttisormus</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a2.5 2.5 0 0 1 5 0c0 2-2 2.5-2 4.5"/><circle cx="12" cy="14" r="4.5"/></svg><span class="lab">Korvakorut</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 3.2L12 9.4 9.5 6.2 12 3z"/><circle cx="12" cy="15.5" r="5"/></svg><span class="lab">Kihlasormus</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l3 5-9 12L3 8l3-5z"/><path d="M3 8h18M9 3l3 5 3-5"/></svg><span class="lab">Jalokivikoru</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="14" r="5"/><circle cx="15.5" cy="14" r="5"/></svg><span class="lab">Vihkisormukset</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a2.5 2.5 0 0 1 5 0c0 2-2 2.5-2 4.5"/><circle cx="12" cy="14" r="4.5"/></svg><span class="lab">Timanttikorvakorut</span></div>
+        </div>
       </div>
-      <div class="item">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><polyline points="12 7 12 12 15.5 14"/></svg>
-        <div><div class="k">Kulta ja kellot</div><div class="v">Korut · sormukset · rannekellot</div></div>
+      <!-- Row 2: gold -->
+      <div class="chain rev" aria-label="Kultakoruja">
+        <div class="chain-track">
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a3 3 0 0 1 0 6h-1a3 3 0 0 1 0-6h1z"/><path d="M18 9a3 3 0 0 1 0 6h-1a3 3 0 0 1 0-6h1z"/><path d="M8 12h8"/></svg><span class="lab">Kultaketju</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4a8 8 0 0 0 16 0"/><circle cx="12" cy="15.5" r="2.4"/></svg><span class="lab">Kaulakoru</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 3.2L12 9.4 9.5 6.2 12 3z"/><circle cx="12" cy="15.5" r="5"/></svg><span class="lab">Kultakoru</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="9" ry="6"/><ellipse cx="12" cy="12" rx="4.5" ry="6"/></svg><span class="lab">Rannekoru</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4a8 8 0 0 0 16 0"/><circle cx="12" cy="15.5" r="2.4"/></svg><span class="lab">Kultariipus</span></div>
+          <div class="chip"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="9" ry="6"/><ellipse cx="12" cy="12" rx="4.5" ry="6"/></svg><span class="lab">Kultarannerengas</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a3 3 0 0 1 0 6h-1a3 3 0 0 1 0-6h1z"/><path d="M18 9a3 3 0 0 1 0 6h-1a3 3 0 0 1 0-6h1z"/><path d="M8 12h8"/></svg><span class="lab">Kultaketju</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4a8 8 0 0 0 16 0"/><circle cx="12" cy="15.5" r="2.4"/></svg><span class="lab">Kaulakoru</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 3.2L12 9.4 9.5 6.2 12 3z"/><circle cx="12" cy="15.5" r="5"/></svg><span class="lab">Kultakoru</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="9" ry="6"/><ellipse cx="12" cy="12" rx="4.5" ry="6"/></svg><span class="lab">Rannekoru</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4a8 8 0 0 0 16 0"/><circle cx="12" cy="15.5" r="2.4"/></svg><span class="lab">Kultariipus</span></div>
+          <div class="chip" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="9" ry="6"/><ellipse cx="12" cy="12" rx="4.5" ry="6"/></svg><span class="lab">Kultarannerengas</span></div>
+        </div>
+      </div>
+      <p class="gallery-note">Otos valikoimastamme, kuvat päivittyvät. Koko valikoiman näet parhaiten liikkeessä.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="svc-sec" id="palvelut">
+    <div class="wrap">
+      <div class="head center">
+        <span class="eyebrow">Palvelut</span>
+        <hr class="divider center" style="margin:1.1rem auto">
+        <h2>Poikkea sisään, niin <span class="gold">autamme</span></h2>
+        <p>Kauniin korun näkee ja tuntee parhaiten omin käsin. Meillä on aikaa sinulle, ilman ajanvarausta ja ilman kiirettä.</p>
+      </div>
+
+      <div class="svcs">
+        <div class="svc">
+          <span class="tframe"></span>
+          <span class="badge">Veloituksetta</span>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3a8 8 0 1 0 5.3 14l4.7 4.7"/><path d="M8 11l2.2 2.2L15 8.5"/></svg>
+          <h3>Ilmainen korujen tarkastus</h3>
+          <p>Tuo korusi tai sormuksesi liikkeeseen, niin tarkastamme sen kunnon ja aitouden maksutta. Tule vain sisään.</p>
+        </div>
+        <div class="svc">
+          <span class="tframe"></span>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 3.9L18 7l-2.6 3.4L18 14l-4.4-.1L12 18l-1.6-4.1L6 14l2.6-3.6L6 7l4.4.1L12 3z"/></svg>
+          <h3>Korujen puhdistus</h3>
+          <p>Anna kultakorusi tai sormuksesi kimallella taas. Puhdistamme sen sinulle huolella liikkeessä.</p>
+        </div>
+      </div>
+
+      <div class="svc-cta">
+        <a class="btn btn-red" href="#sijainti">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Tule käymään
+        </a>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- ABOUT -->
   <section class="about" id="meista">
     <div class="wrap about-grid">
       <figure class="about-photo">
-        <img src="images/gentleman.jpg" alt="Klassinen kultainen rannekello ranteessa" loading="lazy" />
+        <img src="images/about-woman.jpg" alt="Nainen kantaa hentoa kultaketjua ja sormuksia" loading="lazy" />
       </figure>
       <div class="about-copy">
         <span class="eyebrow">Meistä</span>
         <hr class="divider" style="margin:1.1rem 0">
-        <h2 style="font-size:clamp(2.3rem,4.8vw,3.4rem)">Perinteikäs kulta- ja kelloliike Iso&nbsp;Roobertinkadulla</h2>
-        <p>Helsingin Kulta- &amp; Kellopörssi on palvellut Punavuoren sydämessä <strong>vuodesta 1993</strong>. Meillä on aikaa pysähtyä, katsoa ja kuunnella. Jokaisella kellolla ja korulla on oma tarinansa.</p>
-        <p>Erikoisalaamme ovat <strong>vanhemmat kullat ja kultaiset kellot</strong>: klassiset rannekellot, taskukellot, sormukset ja korut. Autamme sinua niin ostamisessa kuin myymisessäkin, rehellisesti ja ilman kiirettä.</p>
+        <h2 style="font-size:clamp(1.9rem,3.4vw,2.6rem)">Pieni kultaliike, jolla on aikaa sinulle</h2>
+        <p>Helsingin Kulta- &amp; Kellopörssi on palvellut Punavuoren sydämessä <strong>vuodesta 1993</strong>. Meille jokainen koru ja sormus on tärkeä. Otamme aikaa kuunnellaksemme, mitä juuri sinä etsit.</p>
+        <p>Löydät meiltä <strong>kauniita kultakoruja ja sormuksia</strong>: kihla- ja vihkisormuksia, ketjuja, jalokiviä ja perintökoruja. Autamme sinua rehellisesti ja kiireettä, niin ostaessa kuin myydessäkin.</p>
         <div class="est-line">
           <span class="yr gold">1993</span>
           <span class="yr-sub">Punavuori<br>Helsinki</span>
@@ -327,62 +378,13 @@
     </div>
   </section>
 
-  <!-- OFFERINGS -->
-  <section class="offer-sec" id="valikoima">
-    <div class="wrap">
-      <div class="head center">
-        <span class="eyebrow">Mitä teemme</span>
-        <hr class="divider center" style="margin:1.1rem auto">
-        <h2>Kullalle ja kelloille arvoisensa <span class="gold">koti</span></h2>
-        <p>Emme ole kiireinen ketjuliike vaan pieni erikoisliike. Keskitymme siihen minkä osaamme parhaiten.</p>
-      </div>
-      <div class="offer">
-        <article class="tile">
-          <img src="images/detail-watch.jpg" alt="Kultainen rannekello lähikuvassa" loading="lazy" />
-          <span class="tframe"></span>
-          <div class="body">
-            <div class="kicker">Kellot</div>
-            <h3>Klassiset kellot</h3>
-            <p>Kultaiset ranne- ja taskukellot sekä perinteiset merkit. Ostamme ja myymme huolella valittuja ajanmittareita.</p>
-          </div>
-        </article>
-        <article class="tile">
-          <img src="images/jewelry.jpg" alt="Kultakoru ja rannekello ranteessa" loading="lazy" />
-          <span class="tframe"></span>
-          <div class="body">
-            <div class="kicker">Kulta ja korut</div>
-            <h3>Kulta ja korut</h3>
-            <p>Kultakorut, ketjut, rannerenkaat ja perintökalleudet. Autamme niin ostajaa kuin myyjääkin rehellisellä arviolla.</p>
-          </div>
-        </article>
-        <article class="tile">
-          <img src="images/rings.jpg" alt="Kultaiset sormukset" loading="lazy" />
-          <span class="tframe"></span>
-          <div class="body">
-            <div class="kicker">Sormukset</div>
-            <h3>Sormukset</h3>
-            <p>Kihla-, vihki- ja koristesormukset kullasta. Tule katsomaan valikoimaa tai kysymään esineesi arvoa paikan päällä.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- DETAIL BAND -->
-  <section class="band">
-    <div class="wrap">
-      <p class="q">”Kullalla ja hyvällä kellolla ei ole kiire. Niillä on aikaa.”</p>
-      <div class="sign">Helsingin Kulta- &amp; Kellopörssi</div>
-    </div>
-  </section>
-
-  <!-- INFO -->
+  <!-- INFO · location, hours, reviews -->
   <section class="info" id="aukiolo">
     <div class="wrap">
       <div class="head center">
-        <span class="eyebrow">Käynti liikkeessä</span>
+        <span class="eyebrow">Tervetuloa liikkeeseen</span>
         <hr class="divider center" style="margin:1.1rem auto">
-        <h2>Aukioloajat ja <span class="gold">yhteystiedot</span></h2>
+        <h2>Sijainti, aukioloajat ja <span class="gold">arvostelut</span></h2>
       </div>
 
       <div class="info-cols">
@@ -399,49 +401,40 @@
         <div class="ic-col">
           <div class="col-title">Yhteystiedot<span class="un"></span></div>
           <div class="cinfo">
-            <div><span class="lab">Puhelin</span><a class="v" href="tel:+3589645360">09 645 360</a></div>
             <div><span class="lab">Osoite</span><a class="v" href="https://maps.google.com/?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki" target="_blank" rel="noopener">Iso Roobertinkatu 9, 00120 Helsinki</a></div>
+            <div><span class="lab">Puhelin</span><a class="v" href="tel:+3589645360">09 645 360</a></div>
+          </div>
+          <div class="reviews">
+            <span class="rev-lab">Arvostelut</span>
+            <a href="https://www.google.com/maps?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki" target="_blank" rel="noopener">Lue asiakkaidemme arvostelut Google&nbsp;Mapsissa</a>
           </div>
           <div class="info-btns">
-            <a class="btn btn-red" href="tel:+3589645360">Soita meille</a>
-            <a class="btn btn-line" href="https://maps.google.com/?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki" target="_blank" rel="noopener">Reittiohjeet</a>
+            <a class="btn btn-red" href="https://maps.google.com/?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki" target="_blank" rel="noopener">Näytä reitti kartalla</a>
           </div>
         </div>
       </div>
 
       <div class="map-wrap" id="sijainti">
-        <iframe title="Helsingin Kulta- & Kellopörssi sijainti ja arvostelut Google Mapsissa"
+        <iframe title="Helsingin Kulta- & Kellopörssi sijainti Google Mapsissa"
           src="https://www.google.com/maps?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki&output=embed"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <p class="map-note">Näet sijainnin ja asiakkaiden arvostelut <a href="https://maps.google.com/?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki" target="_blank" rel="noopener">Google&nbsp;Mapsissa</a>.</p>
     </div>
   </section>
 
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <h4 class="gold">Helsingin Kulta- &amp; Kellopörssi</h4>
-        <p>Perinteikäs kulta- ja kelloliike Helsingin Punavuoressa vuodesta 1993. Kultaa, kelloja, koruja ja sormuksia, osto ja myynti.</p>
-      </div>
-      <div class="foot-col">
-        <p class="h">Yhteystiedot</p>
-        <a href="tel:+3589645360">09 645 360</a>
-        <a href="https://maps.google.com/?q=Helsingin+Kulta-+%26+Kellop%C3%B6rssi,+Iso+Roobertinkatu+9,+00120+Helsinki" target="_blank" rel="noopener">Iso Roobertinkatu 9<br>00120 Helsinki</a>
-      </div>
-      <div class="foot-col">
-        <p class="h">Aukioloajat</p>
-        <p>Ma–Pe&nbsp;&nbsp;10.00–18.00</p>
-        <p>La&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11.00–15.00</p>
-        <p>Su&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suljettu</p>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© <span id="yr">2026</span> Helsingin Kulta- &amp; Kellopörssi Ky</span>
-    </div>
+  <div class="wrap foot">
+    <span class="fname">Helsingin Kulta- &amp; Kellopörssi</span>
+    <span class="fsep">·</span>
+    <span>Iso Roobertinkatu 9, Helsinki</span>
+    <span class="fsep">·</span>
+    <a href="tel:+3589645360">09 645 360</a>
+    <span class="fsep">·</span>
+    <span>Ma–Pe 10–18 · La 11–15</span>
+    <span class="fsep">·</span>
+    <span class="fcopy">© <span id="yr">2026</span></span>
   </div>
 </footer>
 
@@ -457,25 +450,17 @@
     var y=document.getElementById('yr');if(y)y.textContent=new Date().getFullYear();
   })();
 
-  // live gold price -> EUR per gram (24k & 18k). Hides itself if data can't load.
+  // rotating hero slideshow (respects reduced-motion)
   (function(){
-    var fmt=function(n){return n.toLocaleString('fi-FI',{minimumFractionDigits:2,maximumFractionDigits:2})+' €/g';};
-    function load(){
-      Promise.all([
-        fetch('https://api.gold-api.com/price/XAU').then(function(r){return r.json();}),
-        fetch('https://api.frankfurter.dev/v1/latest?base=USD&symbols=EUR').then(function(r){return r.json();})
-      ]).then(function(res){
-        var usdPerOz=res[0] && res[0].price;
-        var usdToEur=res[1] && res[1].rates && res[1].rates.EUR;
-        if(!usdPerOz || !usdToEur) return;
-        var g24=(usdPerOz*usdToEur)/31.1034768, g18=g24*0.75;
-        document.getElementById('g24').textContent=fmt(g24);
-        document.getElementById('g18').textContent=fmt(g18);
-        document.getElementById('priceband').style.display='block';
-      }).catch(function(){/* leave hidden — never show a stale/fake number */});
-    }
-    load();
-    setInterval(load, 300000); // refresh every 5 min
+    if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var slides=document.querySelectorAll('.hero-slides .slide');
+    if(slides.length<2) return;
+    var i=0;
+    setInterval(function(){
+      slides[i].classList.remove('active');
+      i=(i+1)%slides.length;
+      slides[i].classList.add('active');
+    },4500);
   })();
 </script>
 </body>
